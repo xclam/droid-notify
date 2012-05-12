@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/856/trunk/src/apps/droidnotify/preferences/calendar
+END
+SelectCalendarListPreference.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/856/trunk/src/apps/droidnotify/preferences/calendar/SelectCalendarListPreference.java
+END
+CalendarPreferenceActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/856/trunk/src/apps/droidnotify/preferences/calendar/CalendarPreferenceActivity.java
+END
+CalendarCustomizePreferenceActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/856/trunk/src/apps/droidnotify/preferences/calendar/CalendarCustomizePreferenceActivity.java
+END
+CalendarStatusBarNotificationsPreferenceActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/!svn/ver/856/trunk/src/apps/droidnotify/preferences/calendar/CalendarStatusBarNotificationsPreferenceActivity.java
+END

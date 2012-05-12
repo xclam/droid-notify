@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/856/trunk/src/apps/droidnotify/preferences/notifications
+END
+VibratePatternListPreference.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/856/trunk/src/apps/droidnotify/preferences/notifications/VibratePatternListPreference.java
+END
+LEDPatternListPreference.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/856/trunk/src/apps/droidnotify/preferences/notifications/LEDPatternListPreference.java
+END
+LEDColorListPreference.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/856/trunk/src/apps/droidnotify/preferences/notifications/LEDColorListPreference.java
+END

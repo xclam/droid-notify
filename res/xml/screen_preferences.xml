@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:key="screen_settings_screen">	
+	<PreferenceCategory
+		android:layout="@layout/custom_preference_category"
+		android:key="general_category"
+		android:title="@string/general_category">
+		<CheckBoxPreference
+			android:layout="@layout/custom_preference_checkbox"
+			android:key="screen_enabled" 
+			android:title="@string/preference_screen_enabled_title" 
+			android:summaryOn="@string/preference_screen_enabled_summaryOn" 
+			android:summaryOff="@string/preference_screen_enabled_summaryOff" 
+			android:defaultValue="true" />
+		<CheckBoxPreference
+			android:layout="@layout/custom_preference_checkbox"
+			android:key="screen_dim_enabled" 
+			android:title="@string/preference_screen_dim_enabled_title" 
+			android:summaryOn="@string/preference_screen_dim_enabled_summaryOn" 
+			android:summaryOff="@string/preference_screen_dim_enabled_summaryOff" 
+			android:defaultValue="true"
+			android:dependency="screen_enabled" />
+		<CheckBoxPreference
+			android:layout="@layout/custom_preference_checkbox"
+			android:key="keyguard_enabled" 
+			android:title="@string/preference_keyguard_enabled_title" 
+			android:summaryOn="@string/preference_keyguard_enabled_summaryOn" 
+			android:summaryOff="@string/preference_keyguard_enabled_summaryOff" 
+			android:defaultValue="true"
+			android:dependency="screen_enabled" />
+		<CheckBoxPreference
+			android:layout="@layout/custom_preference_checkbox"
+			android:key="landscape_screen_enabled" 
+       		android:title="@string/preference_landscape_screen_enabled_title" 
+       		android:summaryOn="@string/preference_landscape_screen_enabled_summaryOn" 
+       		android:summaryOff="@string/preference_landscape_screen_enabled_summaryOff" 
+       		android:defaultValue="false" />
+	</PreferenceCategory>
+	<PreferenceCategory
+		android:layout="@layout/custom_preference_category"
+		android:key="general_category"
+		android:title="@string/notifications_category">
+		<CheckBoxPreference
+			android:layout="@layout/custom_preference_checkbox" 
+			android:key="blur_screen_background_enabled" 
+			android:title="@string/preference_blur_screen_background_enabled_title" 
+			android:summaryOn="@string/preference_blur_screen_background_enabled_summaryOn" 
+			android:summaryOff="@string/preference_blur_screen_background_enabled_summaryOff" 
+			android:defaultValue="false" />
+		<CheckBoxPreference
+			android:layout="@layout/custom_preference_checkbox" 
+			android:key="dim_screen_background_enabled" 
+			android:title="@string/preference_dim_screen_background_enabled_title" 
+			android:summaryOn="@string/preference_dim_screen_background_enabled_summaryOn" 
+			android:summaryOff="@string/preference_dim_screen_background_enabled_summaryOff" 
+			android:defaultValue="false" />
+		<ListPreference
+			android:layout="@layout/custom_preference_list"
+			android:key="dim_screen_background_amount"
+			android:title="@string/preference_dim_screen_background_amount"
+			android:summary="@string/preference_dim_screen_background_amount_summary"
+			android:defaultValue="50"
+			android:entries="@array/dim_screen_background_amount_options"
+			android:entryValues="@array/dim_screen_background_amount_values"
+			android:dependency="dim_screen_background_enabled" />
+	</PreferenceCategory>
+</PreferenceScreen>

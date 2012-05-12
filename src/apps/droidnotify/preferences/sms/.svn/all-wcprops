@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/856/trunk/src/apps/droidnotify/preferences/sms
+END
+SMSStatusBarNotificationsPreferenceActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/!svn/ver/856/trunk/src/apps/droidnotify/preferences/sms/SMSStatusBarNotificationsPreferenceActivity.java
+END
+SMSCustomizePreferenceActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/856/trunk/src/apps/droidnotify/preferences/sms/SMSCustomizePreferenceActivity.java
+END
+MMSPreferenceActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/856/trunk/src/apps/droidnotify/preferences/sms/MMSPreferenceActivity.java
+END
+MMSCustomizePreferenceActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/856/trunk/src/apps/droidnotify/preferences/sms/MMSCustomizePreferenceActivity.java
+END
+MMSStatusBarNotificationsPreferenceActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/!svn/ver/856/trunk/src/apps/droidnotify/preferences/sms/MMSStatusBarNotificationsPreferenceActivity.java
+END
+SMSPreferenceActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/856/trunk/src/apps/droidnotify/preferences/sms/SMSPreferenceActivity.java
+END

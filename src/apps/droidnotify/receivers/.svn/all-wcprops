@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/856/trunk/src/apps/droidnotify/receivers
+END
+OnUpdateReceiver.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/856/trunk/src/apps/droidnotify/receivers/OnUpdateReceiver.java
+END
+SMSAlarmReceiver.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/642/trunk/src/apps/droidnotify/receivers/SMSAlarmReceiver.java
+END
+K9Receiver.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/652/trunk/src/apps/droidnotify/receivers/K9Receiver.java
+END
+GenericNotificationReceiver.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/856/trunk/src/apps/droidnotify/receivers/GenericNotificationReceiver.java
+END
+RescheduleReceiver.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/856/trunk/src/apps/droidnotify/receivers/RescheduleReceiver.java
+END
+CalendarAlarmReceiver.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/642/trunk/src/apps/droidnotify/receivers/CalendarAlarmReceiver.java
+END
+PhoneAlarmReceiver.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/642/trunk/src/apps/droidnotify/receivers/PhoneAlarmReceiver.java
+END
+ScreenManagementAlarmReceiver.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/642/trunk/src/apps/droidnotify/receivers/ScreenManagementAlarmReceiver.java
+END
+MMSReceiver.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/642/trunk/src/apps/droidnotify/receivers/MMSReceiver.java
+END
+CalendarNotificationAlarmReceiver.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/642/trunk/src/apps/droidnotify/receivers/CalendarNotificationAlarmReceiver.java
+END
+OnBootReceiver.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/856/trunk/src/apps/droidnotify/receivers/OnBootReceiver.java
+END
+K9AlarmReceiver.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/787/trunk/src/apps/droidnotify/receivers/K9AlarmReceiver.java
+END
+SMSReceiver.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/642/trunk/src/apps/droidnotify/receivers/SMSReceiver.java
+END
+MMSAlarmReceiver.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/642/trunk/src/apps/droidnotify/receivers/MMSAlarmReceiver.java
+END
+PhoneReceiver.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/642/trunk/src/apps/droidnotify/receivers/PhoneReceiver.java
+END

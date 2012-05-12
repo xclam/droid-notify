@@ -1,0 +1,167 @@
+K 25
+svn:wc:ra_dav:version-url
+V 31
+/svn/!svn/ver/856/trunk/res/xml
+END
+locale_preferences.xml
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/856/trunk/res/xml/locale_preferences.xml
+END
+sms_preferences.xml
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/856/trunk/res/xml/sms_preferences.xml
+END
+missed_calls_preferences.xml
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/856/trunk/res/xml/missed_calls_preferences.xml
+END
+k9_status_bar_notifications_preferences.xml
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/856/trunk/res/xml/k9_status_bar_notifications_preferences.xml
+END
+sms_customize_preferences.xml
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/856/trunk/res/xml/sms_customize_preferences.xml
+END
+missed_calls_customize_preferences.xml
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/856/trunk/res/xml/missed_calls_customize_preferences.xml
+END
+advanced_preferences.xml
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/856/trunk/res/xml/advanced_preferences.xml
+END
+reminder_preferences.xml
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/856/trunk/res/xml/reminder_preferences.xml
+END
+quiet_time_preferences.xml
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/856/trunk/res/xml/quiet_time_preferences.xml
+END
+custom_contact_status_bar_notifications_preferences.xml
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/856/trunk/res/xml/custom_contact_status_bar_notifications_preferences.xml
+END
+calendar_preferences.xml
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/856/trunk/res/xml/calendar_preferences.xml
+END
+calendar_customize_preferences.xml
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/856/trunk/res/xml/calendar_customize_preferences.xml
+END
+mms_status_bar_notifications_preferences.xml
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/856/trunk/res/xml/mms_status_bar_notifications_preferences.xml
+END
+privacy_preferences.xml
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/856/trunk/res/xml/privacy_preferences.xml
+END
+screen_preferences.xml
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/856/trunk/res/xml/screen_preferences.xml
+END
+basic_preferences.xml
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/856/trunk/res/xml/basic_preferences.xml
+END
+missed_calls_status_bar_notifications_preferences.xml
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/856/trunk/res/xml/missed_calls_status_bar_notifications_preferences.xml
+END
+sms_status_bar_notifications_preferences.xml
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/856/trunk/res/xml/sms_status_bar_notifications_preferences.xml
+END
+customize_preferences.xml
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/856/trunk/res/xml/customize_preferences.xml
+END
+k9_preferences.xml
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/856/trunk/res/xml/k9_preferences.xml
+END
+reschedule_preferences.xml
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/856/trunk/res/xml/reschedule_preferences.xml
+END
+k9_customize_preferences.xml
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/856/trunk/res/xml/k9_customize_preferences.xml
+END
+debug_preferences.xml
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/856/trunk/res/xml/debug_preferences.xml
+END
+quick_reply_preferences.xml
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/856/trunk/res/xml/quick_reply_preferences.xml
+END
+calendar_status_bar_notifications_preferences.xml
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/856/trunk/res/xml/calendar_status_bar_notifications_preferences.xml
+END
+mms_preferences.xml
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/856/trunk/res/xml/mms_preferences.xml
+END
+mms_customize_preferences.xml
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/856/trunk/res/xml/mms_customize_preferences.xml
+END

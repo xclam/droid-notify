@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/856/trunk/src/apps/droidnotify/preferences/k9
+END
+K9PreferenceActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/856/trunk/src/apps/droidnotify/preferences/k9/K9PreferenceActivity.java
+END
+K9CustomizePreferenceActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/856/trunk/src/apps/droidnotify/preferences/k9/K9CustomizePreferenceActivity.java
+END
+K9StatusBarNotificationsPreferenceActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/856/trunk/src/apps/droidnotify/preferences/k9/K9StatusBarNotificationsPreferenceActivity.java
+END
+K9DownloadPreferenceActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/856/trunk/src/apps/droidnotify/preferences/k9/K9DownloadPreferenceActivity.java
+END

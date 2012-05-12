@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:key="advanced_settings_screen">	
+	<PreferenceCategory
+		android:layout="@layout/custom_preference_category"
+		android:key="general_category"
+		android:title="@string/general_category">
+		<CheckBoxPreference
+			android:layout="@layout/custom_preference_checkbox"
+			android:key="haptic_feedback_enabled" 
+        	android:title="@string/haptic_feedback_title" 
+        	android:summary="@string/haptic_feedback_summary"
+        	android:defaultValue="true" />
+		<CheckBoxPreference
+			android:layout="@layout/custom_preference_checkbox"
+			android:key="close_app_when_pushed_to_background" 
+        	android:title="@string/close_app_when_pushed_to_background_title" 
+        	android:summary="@string/close_app_when_pushed_to_background_summary" 
+        	android:defaultValue="false" />
+		<CheckBoxPreference
+			android:layout="@layout/custom_preference_checkbox"
+			android:key="ignore_linked_apps_when_pushed_to_background" 
+        	android:title="@string/preference_ignore_linked_apps_when_pushed_to_background_title" 
+        	android:summary="@string/preference_ignore_linked_apps_when_pushed_to_background_summary" 
+        	android:defaultValue="false"
+		    android:dependency="close_app_when_pushed_to_background" />
+		<CheckBoxPreference
+			android:layout="@layout/custom_preference_checkbox"
+			android:key="restrict_popup" 
+        	android:title="@string/restrict_popup_title" 
+        	android:summary="@string/restrict_popup_summary" 
+        	android:defaultValue="false" />
+	</PreferenceCategory>
+    <PreferenceCategory
+		android:layout="@layout/custom_preference_category"
+		android:key="screen_category"
+		android:title="@string/screen_category">
+		<ListPreference
+			android:layout="@layout/custom_preference_list"
+			android:key="screen_timeout_settings"
+			android:title="@string/preference_screen_timeout"
+			android:summary="@string/preference_screen_timeout_summary"
+			android:defaultValue="300"
+			android:entries="@array/screen_timeout_options"
+			android:entryValues="@array/screen_timeout_values" />
+    </PreferenceCategory>
+	<PreferenceCategory
+		android:layout="@layout/custom_preference_category"
+		android:key="sms_category"
+		android:title="@string/sms_category">
+		<ListPreference
+			android:layout="@layout/custom_preference_list"
+			android:key="sms_timeout_settings"
+			android:title="@string/preference_sms_timeout"
+			android:summary="@string/preference_sms_timeout_summary"
+			android:defaultValue="10"
+			android:entries="@array/timeout_options"
+			android:entryValues="@array/timeout_values" />
+		<ListPreference
+			android:layout="@layout/custom_preference_list"
+			android:key="sms_loading_settings"
+			android:title="@string/preference_sms_loading_title"
+			android:summary="@string/preference_sms_loading_summary"
+			android:defaultValue="0"
+			android:entries="@array/sms_loading_options"
+			android:entryValues="@array/sms_loading_values" />
+<!--
+		<ListPreference
+			android:layout="@layout/custom_preference_list"
+			android:key="sms_timestamp_adjustment_settings"
+			android:title="@string/preference_sms_timestamp_adjustment_title"
+			android:summary="@string/preference_sms_timestamp_adjustment_summary"
+			android:defaultValue="0"
+			android:entries="@array/timestamp_adjustment_options"
+			android:entryValues="@array/timestamp_adjustment_values" />
+-->
+	</PreferenceCategory>
+	<PreferenceCategory
+		android:layout="@layout/custom_preference_category"
+		android:key="mms_category"
+		android:title="@string/mms_category">
+		<ListPreference
+			android:layout="@layout/custom_preference_list"
+			android:key="mms_timeout_settings"
+			android:title="@string/preference_mms_timeout"
+			android:summary="@string/preference_mms_timeout_summary"
+			android:defaultValue="40"
+			android:entries="@array/timeout_options"
+			android:entryValues="@array/timeout_values" />
+	</PreferenceCategory>
+	<PreferenceCategory
+		android:layout="@layout/custom_preference_category"
+		android:key="missed_calls_category"
+		android:title="@string/missed_calls_category">
+		<ListPreference
+			android:layout="@layout/custom_preference_list"
+			android:key="call_log_timeout_settings"
+			android:title="@string/preference_call_log_timeout"
+			android:summary="@string/preference_call_log_timeout_summary"
+			android:defaultValue="5"
+			android:entries="@array/timeout_options"
+			android:entryValues="@array/timeout_values" />
+	</PreferenceCategory>
+	<PreferenceCategory
+		android:layout="@layout/custom_preference_category"
+		android:key="k9_category"
+		android:title="@string/k9_category">
+		<ListPreference
+			android:layout="@layout/custom_preference_list"
+			android:key="k9_timeout"
+			android:title="@string/preference_k9_timeout_title"
+			android:summary="@string/preference_k9_timeout_summary"
+			android:defaultValue="1"
+			android:entries="@array/timeout_options"
+			android:entryValues="@array/timeout_values" />
+	</PreferenceCategory>
+	<PreferenceCategory
+		android:layout="@layout/custom_preference_category"
+		android:key="quick_reply_category"
+		android:title="@string/quick_reply_category">
+		<ListPreference
+			android:layout="@layout/custom_preference_list"
+			android:key="quick_reply_sms_gateway_settings"
+			android:title="@string/preference_quick_reply_sms_gateway"
+			android:summary="@string/preference_quick_reply_sms_gateway_summary"
+			android:defaultValue="1"
+			android:entries="@array/quick_reply_sms_gateway_options"
+			android:entryValues="@array/quick_reply_sms_gateway_values" />
+	</PreferenceCategory>	
+	<PreferenceCategory
+		android:layout="@layout/custom_preference_category"
+		android:key="status_bar_category"
+		android:title="@string/status_bar_category">
+		<CheckBoxPreference
+			android:layout="@layout/custom_preference_checkbox"
+			android:key="clear_status_bar_notifications_on_exit_enabled" 
+    		android:title="@string/clear_status_bar_notifications_on_exit_title" 
+    		android:summaryOn="@string/clear_status_bar_notifications_on_exit_summaryOn" 
+    		android:summaryOff="@string/clear_status_bar_notifications_on_exit_summaryOff" 
+    		android:defaultValue="false" />	
+	</PreferenceCategory>
+	<PreferenceCategory
+		android:layout="@layout/custom_preference_category"
+		android:key="import_export_category"
+		android:title="@string/import_export_category">
+		<Preference
+			android:layout="@layout/custom_preference"
+			android:key="export_preferences"
+			android:title="@string/preference_export_preferences_title"
+			android:summary="@string/preference_export_preferences_summary" />
+		<Preference
+			android:layout="@layout/custom_preference"
+			android:key="import_preferences"
+			android:title="@string/preference_import_preferences_title"
+			android:summary="@string/preference_import_preferences_summary" />	
+	</PreferenceCategory>
+	<PreferenceCategory
+		android:layout="@layout/custom_preference_category"
+		android:key="debug_category"
+		android:title="@string/debug_category">
+		<Preference
+			android:layout="@layout/custom_preference_bottom_title"
+            android:key="debug_preference"
+        	android:title="@string/debug" />
+	</PreferenceCategory>	
+</PreferenceScreen>

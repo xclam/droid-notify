@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:droidnotify="http://schemas.android.com/apk/res/apps.droidnotify"
+	android:key="k9_status_bar_notifications_settings_screen">	
+	<PreferenceCategory
+		android:layout="@layout/custom_preference_category"
+		android:key="k9_notification_general_settings_category"
+		android:title="@string/general_category">						
+		<CheckBoxPreference
+			android:layout="@layout/custom_preference_checkbox"
+			android:key="k9_status_bar_notifications_show_when_blocked_enabled" 
+			android:title="@string/preference_notifications_show_when_blocked_enabled_title" 
+			android:summary="@string/preference_notifications_show_when_blocked_enabled_summary" 
+			android:defaultValue="true" />
+		<apps.droidnotify.preferences.custom.ImageListPreference
+			android:layout="@layout/custom_preference_list"
+			android:key="notification_icon_k9"
+			android:title="@string/preference_notification_icon_text"
+			android:summary="@string/preference_notification_icon_summary"
+			android:entries="@array/notification_icon_options"
+			android:entryValues="@array/notification_icon_values"
+			droidnotify:entryImages="@array/notification_icon_images"
+			android:defaultValue="status_bar_notification_email_white" />
+	</PreferenceCategory>	
+	<PreferenceCategory
+		android:layout="@layout/custom_preference_category"
+		android:key="sound_category"
+		android:title="@string/sound_category">
+		<RingtonePreference
+			android:layout="@layout/custom_preference_list"
+			android:key="k9_notification_sound"
+			android:title="@string/notification_ringtone_title"
+			android:summary="@string/notification_ringtone_summary"
+			android:ringtoneType="all"
+			android:showDefault="false"
+			android:showSilent="true"
+			android:defaultValue="content://settings/system/notification_sound" />
+	</PreferenceCategory>
+	<PreferenceCategory
+		android:layout="@layout/custom_preference_category"
+		android:key="vibrate_category"
+		android:title="@string/vibrate_category">	
+		<ListPreference
+			android:layout="@layout/custom_preference_list"
+			android:key="k9_notification_vibrate_setting"
+			android:title="@string/vibrate_setting_title"
+			android:summary="@string/vibrate_setting_summary"
+			android:defaultValue="0"
+			android:entries="@array/vibrate_setting_options"
+			android:entryValues="@array/vibrate_setting_values" />									
+		<apps.droidnotify.preferences.notifications.VibratePatternListPreference
+			android:layout="@layout/custom_preference_list"
+			android:key="k9_notification_vibrate_pattern"
+			android:title="@string/vibrate_pattern_title"
+			android:summary="@string/vibrate_pattern_summary"
+			android:entries="@array/vibrate_pattern_options"
+			android:entryValues="@array/vibrate_pattern_values_k9"
+			android:defaultValue="0,1200" />
+	</PreferenceCategory>	
+	<PreferenceCategory
+		android:layout="@layout/custom_preference_category"
+		android:key="led_category"
+		android:title="@string/led_category">
+		<CheckBoxPreference
+			android:layout="@layout/custom_preference_checkbox"
+			android:key="k9_notification_led_enabled" 
+			android:title="@string/led_enabled_title" 
+			android:summary="@string/led_enabled_summary"
+			android:defaultValue="true" />
+		<apps.droidnotify.preferences.notifications.LEDColorListPreference
+			android:layout="@layout/custom_preference_list"
+			android:key="k9_notification_led_color"
+			android:title="@string/led_color_title"
+			android:summary="@string/led_color_summary"
+			android:entries="@array/led_color_options"
+			android:entryValues="@array/led_color_values_k9"
+			android:defaultValue="red"
+			android:dependency="k9_notification_led_enabled" />
+		<apps.droidnotify.preferences.notifications.LEDPatternListPreference
+			android:layout="@layout/custom_preference_list"
+			android:key="k9_notification_led_pattern"
+			android:title="@string/led_pattern_title"
+			android:summary="@string/led_pattern_summary"
+			android:entries="@array/led_pattern_options"
+			android:entryValues="@array/led_pattern_values_k9"
+			android:defaultValue="1000,1000"
+			android:dependency="k9_notification_led_enabled" />
+	</PreferenceCategory>
+	<PreferenceCategory
+		android:layout="@layout/custom_preference_category"
+		android:key="in_call_category"
+		android:title="@string/in_call_category">
+		<CheckBoxPreference
+			android:layout="@layout/custom_preference_checkbox"
+			android:key="k9_notification_in_call_sound_enabled" 
+			android:title="@string/status_bar_notification_in_call_sound_title" 
+			android:summary="@string/status_bar_notification_in_call_sound_summary"
+			android:defaultValue="false" />
+		<CheckBoxPreference
+			android:layout="@layout/custom_preference_checkbox"
+			android:key="k9_notification_in_call_vibrate_enabled" 
+			android:title="@string/status_bar_notification_in_call_vibrate_title" 
+			android:summary="@string/status_bar_notification_in_call_vibrate_summary"
+			android:defaultValue="true" />
+	</PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/row_linear_layout_1"
+   	android:layout_height="wrap_content"
+   	android:layout_width="fill_parent"
+   	android:orientation="vertical">
+
+    <!-- Preference Header-->
+	<TextView
+	    android:id="@+id/header_title"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center_vertical"
+	    android:gravity="center|left"
+	    android:paddingLeft="8dp"
+	    android:textAppearance="?android:attr/textAppearanceLarge"
+	    android:drawableLeft="@drawable/ic_launcher"
+	    android:drawablePadding="2dp"
+	    android:text="@string/quick_reply_settings" />   
+	<ImageView
+       	android:id="@+id/header_title_divider"
+  		android:src="@drawable/preference_divider_header"
+  		android:layout_height="2dp"  
+		android:layout_width="fill_parent" />
+	
+	<!-- Preference List-->   
+     <ListView android:id="@android:id/list"
+     	android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+	
+</LinearLayout>

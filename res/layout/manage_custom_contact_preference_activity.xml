@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content_relataive_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" xmlns:ns=":http://schemas.android.com/apk/res/android">
+    <!-- Preference Header -->
+    <TextView
+        android:id="@+id/header_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:drawableLeft="@drawable/ic_launcher"
+        android:drawablePadding="2dp"
+        android:gravity="center|left"
+        android:paddingLeft="8dp"
+        android:text="@string/customize_contacts"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    <ImageView
+        android:id="@+id/header_title_divider"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/header_title"
+        android:src="@drawable/preference_divider_header" />
+	<LinearLayout
+		android:id="@+id/contact_name_linear_layout"
+	    android:layout_height="wrap_content"
+	    android:layout_width="fill_parent"
+		android:orientation="horizontal"
+		android:layout_marginBottom="15dp"
+        android:layout_below="@+id/header_title_divider"
+	    android:visibility="invisible">		
+	    <TextView
+	        android:id="@+id/contact_name_title"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dp"
+			android:paddingTop="10dp"
+	        android:paddingLeft="5dp"
+	        android:textAppearance="?android:attr/textAppearanceMedium" 
+			android:textStyle="bold"
+	        android:text="@string/contact" />
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+			android:paddingTop="10dp"
+			android:paddingRight="5dp"
+	        android:text="@string/colon" />
+	    <TextView
+	        android:id="@+id/contact_name"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginRight="10dp"
+			android:paddingTop="10dp"
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+	</LinearLayout>
+    <ImageView
+        android:id="@+id/contact_name_divider"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:src="@drawable/preference_divider_normal"
+        android:layout_below="@+id/contact_name_linear_layout"
+	    android:visibility="invisible" />
+     <ProgressBar
+         android:id="@+id/progress_bar"
+         style="?android:attr/progressBarStyleLarge"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_centerHorizontal="true"
+         android:layout_centerVertical="true" />
+	<!-- Preference List-->   
+     <ListView android:id="@android:id/list"
+     	android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/contact_name_divider" />
+</RelativeLayout>

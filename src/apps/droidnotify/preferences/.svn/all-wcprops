@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/864/trunk/src/apps/droidnotify/preferences
+END
+ReschedulePreferenceActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/856/trunk/src/apps/droidnotify/preferences/ReschedulePreferenceActivity.java
+END
+DebugPreferenceActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/856/trunk/src/apps/droidnotify/preferences/DebugPreferenceActivity.java
+END
+UpgradePreferenceActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/856/trunk/src/apps/droidnotify/preferences/UpgradePreferenceActivity.java
+END
+RemindersPreferenceActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/856/trunk/src/apps/droidnotify/preferences/RemindersPreferenceActivity.java
+END
+QuickReplyPreferenceActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/856/trunk/src/apps/droidnotify/preferences/QuickReplyPreferenceActivity.java
+END
+LocalePreferenceActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/856/trunk/src/apps/droidnotify/preferences/LocalePreferenceActivity.java
+END
+PreferencesActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/856/trunk/src/apps/droidnotify/preferences/PreferencesActivity.java
+END
+AdvancedPreferenceActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/864/trunk/src/apps/droidnotify/preferences/AdvancedPreferenceActivity.java
+END
+QuietTimePreferenceActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/856/trunk/src/apps/droidnotify/preferences/QuietTimePreferenceActivity.java
+END
+NotificationsPreferenceActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/856/trunk/src/apps/droidnotify/preferences/NotificationsPreferenceActivity.java
+END
+AddOnsActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/856/trunk/src/apps/droidnotify/preferences/AddOnsActivity.java
+END
+AboutPreferenceActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/856/trunk/src/apps/droidnotify/preferences/AboutPreferenceActivity.java
+END
+PrivacyPreferenceActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/856/trunk/src/apps/droidnotify/preferences/PrivacyPreferenceActivity.java
+END
+ScreenPreferenceActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/856/trunk/src/apps/droidnotify/preferences/ScreenPreferenceActivity.java
+END
+BasicPreferenceActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/856/trunk/src/apps/droidnotify/preferences/BasicPreferenceActivity.java
+END
+CustomizePreferenceActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/856/trunk/src/apps/droidnotify/preferences/CustomizePreferenceActivity.java
+END

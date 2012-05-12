@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:key="locale_settings_screen">
+	<ListPreference
+		android:layout="@layout/custom_preference_list"
+		android:key="language_setting"
+		android:title="@string/preference_language_title"
+		android:summary="@string/preference_language_summary"
+		android:defaultValue="phone_default"
+		android:entries="@array/language_options"
+		android:entryValues="@array/language_values" />
+	<ListPreference
+		android:layout="@layout/custom_preference_list"
+		android:key="time_format_settings"
+		android:title="@string/preference_time_format"
+		android:summary="@string/preference_time_format_summary"
+		android:defaultValue="0"
+		android:entries="@array/time_format_options"
+		android:entryValues="@array/time_format_values" />
+	<ListPreference
+		android:layout="@layout/custom_preference_list"
+		android:key="date_format_settings"
+		android:title="@string/preference_date_format"
+		android:summary="@string/preference_date_format_summary"
+		android:defaultValue="0"
+		android:entries="@array/date_format_options"
+		android:entryValues="@array/date_format_values" />
+	<ListPreference
+		android:layout="@layout/custom_preference_list"
+		android:key="phone_number_format_settings"
+		android:title="@string/preference_phone_number_format"
+		android:summary="@string/preference_phone_number_format_summary"
+		android:defaultValue="1"
+		android:entries="@array/phone_number_format_options"
+		android:entryValues="@array/phone_number_format_values" />	
+	<CheckBoxPreference
+		android:layout="@layout/custom_preference_checkbox"
+		android:key="phone_number_format_10_digits_only" 
+		android:title="@string/preference_phone_number_format_10_digits_only_title" 
+		android:summary="@string/preference_phone_number_format_10_digits_only_summary"
+		android:defaultValue="false" />
+</PreferenceScreen>

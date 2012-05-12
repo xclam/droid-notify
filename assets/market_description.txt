@@ -1,0 +1,17 @@
+**NOTE** Please test the free basic version of this application before purchasing to ensure that it works on your phone.
+
+Don't miss what matters most, get notified!
+
+Never miss another Call, Text Message, Email or Calendar Event again!
+
+This application will display a popup window if any of the following events occur:
+Missed Calls
+Text Messages (SMS/MMS)
+Calendar Events
+Emails  (Only works if you have a K-9 email client...examples: K-9 Mail, Kaiten, etc. ) 
+
+This app is extremely customizable with many options to suit your needs and style. Updates are frequent and new features are added based on user feedback.
+
+An outline of the application preferences can be found here: http://code.google.com/p/droid-notify/wiki/ApplicationPreferences
+ 
+Development Website: http://code.google.com/p/droid-notify/

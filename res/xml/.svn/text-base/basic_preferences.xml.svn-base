@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:key="basic_settings_screen">	
+	<PreferenceCategory
+		android:layout="@layout/custom_preference_category"
+		android:key="general_category"
+		android:title="@string/general_category">	
+		<ListPreference
+			android:layout="@layout/custom_preference_list"
+			android:key="blocking_app_running_action"
+			android:title="@string/blocking_app_running_action_text"
+			android:summary="@string/blocking_app_running_action_summary"
+			android:defaultValue="2"
+			android:entries="@array/blocking_app_running_action_options"
+			android:entryValues="@array/blocking_app_running_action_values" />
+		<CheckBoxPreference
+			android:layout="@layout/custom_preference_checkbox"
+			android:key="display_text_to_speech_button" 
+			android:title="@string/preference_display_text_to_speech_button_title" 
+			android:summary="@string/preference_display_text_to_speech_button_summary"
+			android:defaultValue="true" />
+		<CheckBoxPreference
+			android:layout="@layout/custom_preference_checkbox"
+			android:key="hide_single_message_header_enabled" 
+			android:title="@string/preference_hide_single_message_header_enabled_title" 
+			android:summaryOn="@string/preference_hide_single_message_header_enabled_summaryOn" 
+			android:summaryOff="@string/preference_hide_single_message_header_enabled_summaryOff" 
+			android:defaultValue="false" />
+		<CheckBoxPreference
+			android:layout="@layout/custom_preference_checkbox"
+			android:key="hide_unknown_contact_name" 
+			android:title="@string/preference_hide_unknown_contact_name_title" 
+			android:summary="@string/preference_hide_unknown_contact_name_summary"
+			android:defaultValue="false" />
+		<CheckBoxPreference
+			android:layout="@layout/custom_preference_checkbox"
+			android:key="disable_context_menu" 
+			android:title="@string/preference_disable_context_menu_title" 
+			android:summary="@string/preference_disable_context_menu_summary"
+			android:defaultValue="false" />    
+		<CheckBoxPreference
+			android:layout="@layout/custom_preference_checkbox"
+			android:key="disable_quick_contact" 
+			android:title="@string/preference_disable_quick_contact_title" 
+			android:summary="@string/preference_disable_quick_contact_summary"
+			android:defaultValue="false" />
+	</PreferenceCategory>
+	<PreferenceCategory
+		android:layout="@layout/custom_preference_category"
+		android:key="reschedule_category"
+		android:title="@string/reschedule_category">
+		<CheckBoxPreference
+			android:layout="@layout/custom_preference_checkbox"
+			android:key="display_reschedule_button" 
+			android:title="@string/preference_display_reschedule_button_title" 
+			android:summary="@string/preference_display_reschedule_button_summary"
+			android:defaultValue="true" />
+		<Preference
+			android:layout="@layout/custom_preference_title"
+	        android:key="reschedule_preference"
+	       	android:title="@string/reschedule_settings"
+			android:dependency="display_reschedule_button" />
+	</PreferenceCategory>
+	<PreferenceCategory
+		android:layout="@layout/custom_preference_category"
+		android:key="reminders_category"
+		android:title="@string/reminders_category">
+		<CheckBoxPreference
+			android:layout="@layout/custom_preference_checkbox"
+			android:key="reminders_enabled" 
+			android:title="@string/preference_reminders_enabled_title" 
+			android:summary="@string/preference_reminders_enabled_summary"
+			android:defaultValue="false" />
+		<Preference
+			android:layout="@layout/custom_preference_title"
+	        android:key="reminders_preference"
+	       	android:title="@string/reminder_settings"
+			android:dependency="reminders_enabled" />
+	</PreferenceCategory>
+	<PreferenceCategory
+		android:layout="@layout/custom_preference_category"
+		android:key="quiet_time_category"
+		android:title="@string/quiet_time_category">	
+		<CheckBoxPreference
+			android:layout="@layout/custom_preference_checkbox"
+			android:key="quiet_time_enabled" 
+			android:title="@string/preference_quiet_time_enabled_title" 
+			android:summary="@string/preference_quiet_time_enabled_summary" 
+			android:defaultValue="false" />
+		<Preference
+			android:layout="@layout/custom_preference_title"
+	        android:key="quiet_time_preference"
+	       	android:title="@string/quiet_time_settings"
+			android:dependency="quiet_time_enabled" />
+	</PreferenceCategory>
+	<PreferenceCategory
+		android:layout="@layout/custom_preference_category"
+		android:key="quick_reply_category"
+		android:title="@string/quick_reply_category">
+		<Preference
+			android:layout="@layout/custom_preference_title"
+	        android:key="quick_reply_preference"
+	       	android:title="@string/quick_reply_settings" />
+	</PreferenceCategory>
+	<PreferenceCategory
+		android:layout="@layout/custom_preference_category"
+		android:key="customize_contacts_category"
+		android:title="@string/customize_contacts_category">
+		<Preference
+			android:layout="@layout/custom_preference_title"
+	        android:key="customize_contacts_preference"
+	       	android:title="@string/customize_contacts" />
+	</PreferenceCategory>
+	<PreferenceCategory
+		android:layout="@layout/custom_preference_category"
+		android:key="blacklist_category"
+		android:title="@string/blacklist_category">
+		<Preference
+			android:layout="@layout/custom_preference_bottom_title"
+	        android:key="blacklist_preference"
+	       	android:title="@string/blacklist" />
+	</PreferenceCategory>
+</PreferenceScreen>

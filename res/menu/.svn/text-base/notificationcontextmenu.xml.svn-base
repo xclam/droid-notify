@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item 
+		android:id="@+id/add_contact_context_menu"
+        android:title="@string/add_contact_text" />
+	<item 
+		android:id="@+id/edit_contact_context_menu"
+        android:title="@string/edit_contact_text" />
+	<item 
+		android:id="@+id/view_contact_context_menu"
+        android:title="@string/view_contact_text" />
+    <item 
+		android:id="@+id/view_call_log_context_menu"
+        android:title="@string/view_call_log_text" />
+    <item 
+		android:id="@+id/call_contact_context_menu"
+        android:title="@string/call_contact_text" />
+    <item 
+		android:id="@+id/messaging_inbox_context_menu"
+        android:title="@string/messaging_inbox_text" />
+    <item 
+		android:id="@+id/view_thread_context_menu"
+        android:title="@string/view_thread_text" />
+    <item 
+		android:id="@+id/text_contact_context_menu"
+        android:title="@string/text_contact_text" />
+	<item 
+		android:id="@+id/add_calendar_event_context_menu"
+        android:title="@string/add_calendar_event_text" />
+	<item 
+		android:id="@+id/edit_calendar_event_context_menu"
+        android:title="@string/edit_calendar_event_text" />
+	<item 
+		android:id="@+id/view_calendar_context_menu"
+        android:title="@string/view_calendar_text" />
+	<item 
+		android:id="@+id/view_k9_inbox_context_menu"
+        android:title="@string/email_inbox_text" />
+	<item 
+		android:id="@+id/reschedule_notification_context_menu"
+        android:title="@string/reschedule_notification_text" />
+	<item 
+		android:id="@+id/speak_notification_context_menu"
+        android:title="@string/speak_notification_text" />
+	<item 
+		android:id="@+id/dismiss_notification_context_menu"
+        android:title="@string/dismiss_notification_text" />
+</menu>

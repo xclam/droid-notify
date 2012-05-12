@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:key="calendar_status_bar_notifications_settings_screen">	
+	<PreferenceCategory
+		android:layout="@layout/custom_preference_category"
+		android:key="general_category"
+		android:title="@string/general_category">
+		<ListPreference
+			android:layout="@layout/custom_preference_list"
+			android:key="calendar_notification_count_action"
+			android:title="@string/preference_notification_count_button_action"
+			android:summary="@string/preference_notification_count_button_action_summary"
+			android:defaultValue="0"
+			android:entries="@array/calendar_notification_count_button_options"
+			android:entryValues="@array/calendar_notification_count_button_values"/>
+	</PreferenceCategory>
+	<PreferenceCategory
+		android:layout="@layout/custom_preference_category"
+		android:key="buttons_category"
+		android:title="@string/buttons_category">
+		<CheckBoxPreference
+			android:layout="@layout/custom_preference_checkbox" 
+			android:key="calendar_display_dismiss_button" 
+			android:title="@string/preference_display_dismiss_button_title" 
+			android:summary="@string/preference_display_dismiss_button_summary"
+			android:defaultValue="true" />
+		<ListPreference
+			android:layout="@layout/custom_preference_list"
+			android:key="calendar_dismiss_button_action"
+			android:title="@string/preference_dismiss_button_action"
+			android:summary="@string/preference_dismiss_button_action_summary"
+			android:defaultValue="0"
+			android:entries="@array/calendar_dismiss_button_options"
+			android:entryValues="@array/calendar_dismiss_button_values"
+			android:dependency="calendar_display_dismiss_button" />
+		<CheckBoxPreference
+			android:layout="@layout/custom_preference_checkbox" 
+			android:key="calendar_display_view_button" 
+			android:title="@string/preference_display_view_button_title" 
+			android:summary="@string/preference_display_view_button_summary"
+			android:defaultValue="true" />
+	</PreferenceCategory>
+</PreferenceScreen>

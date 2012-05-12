@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest 
+	xmlns:android="http://schemas.android.com/apk/res/android" 
+	package="apps.droidnotify"
+    android:versionCode="41"
+    android:versionName="3.8"
+    android:installLocation="internalOnly" >
+    
+	<uses-sdk
+		android:minSdkVersion="8" 
+		android:targetSdkVersion="15" />
+	
+	<supports-screens
+		android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:anyDensity="true" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.CALL_PHONE" />
+	<uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+	<uses-permission android:name="android.permission.GET_TASKS" />
+	<uses-permission android:name="android.permission.MODIFY_PHONE_STATE" />
+	<uses-permission android:name="android.permission.READ_CONTACTS" />
+	<uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.READ_SMS" />	
+	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+	<uses-permission android:name="android.permission.RECEIVE_MMS" />
+	<uses-permission android:name="android.permission.RECEIVE_SMS" />
+	<uses-permission android:name="android.permission.RECEIVE_WAP_PUSH" />
+	<uses-permission android:name="android.permission.SEND_SMS" />	
+	<uses-permission android:name="android.permission.VIBRATE" />
+	<uses-permission android:name="android.permission.WAKE_LOCK" />
+	<uses-permission android:name="android.permission.WRITE_CONTACTS" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.WRITE_SMS" />
+	
+	<uses-permission android:name="com.fsck.k9.permission.READ_MESSAGES" />
+	<uses-permission android:name="com.fsck.k9.permission.DELETE_MESSAGES" />
+	
+	<uses-permission android:name="com.kaitenmail.permission.READ_MESSAGES" />
+	<uses-permission android:name="com.kaitenmail.permission.DELETE_MESSAGES" />
+	
+	<uses-permission android:name="thinkpanda.permission.CLEAR_MISSED_CALL" />
+	
+	<uses-feature android:name="android.hardware.telephony" />
+	
+    <application          
+    	android:name="apps.droidnotify.MyApplication"
+    	android:icon="@drawable/ic_launcher"
+    	android:label="@string/app_name_basic_formatted"
+    	android:debuggable="true" >
+        
+        <activity 
+        	android:name="apps.droidnotify.preferences.PreferencesActivity"
+    		android:theme="@android:style/Theme.Black.NoTitleBar" 
+        	android:label="@string/app_name_basic_formatted"
+   			android:launchMode="singleTask"
+   			android:taskAffinity="apps.droidnotify.preferences"
+			android:screenOrientation="user"
+			android:configChanges="orientation|keyboardHidden|keyboard|navigation">        
+			<intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            	<category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>  
+         
+        <activity 
+        	android:name="apps.droidnotify.preferences.BasicPreferenceActivity"
+    		android:theme="@android:style/Theme.Black.NoTitleBar"
+   			android:launchMode="singleTask"
+   			android:taskAffinity="apps.droidnotify.preferences"
+			android:screenOrientation="user"
+			android:configChanges="orientation|keyboardHidden|keyboard|navigation" />    
+         
+        <activity 
+        	android:name="apps.droidnotify.preferences.ReschedulePreferenceActivity"
+    		android:theme="@android:style/Theme.Black.NoTitleBar"
+   			android:launchMode="singleTask"
+   			android:taskAffinity="apps.droidnotify.preferences"
+			android:screenOrientation="user"
+			android:configChanges="orientation|keyboardHidden|keyboard|navigation" />  
+         
+        <activity 
+        	android:name="apps.droidnotify.preferences.RemindersPreferenceActivity"
+    		android:theme="@android:style/Theme.Black.NoTitleBar"
+   			android:launchMode="singleTask"
+   			android:taskAffinity="apps.droidnotify.preferences"
+			android:screenOrientation="user"
+			android:configChanges="orientation|keyboardHidden|keyboard|navigation" />  
+         
+        <activity 
+        	android:name="apps.droidnotify.preferences.QuietTimePreferenceActivity"
+    		android:theme="@android:style/Theme.Black.NoTitleBar"
+   			android:launchMode="singleTask"
+   			android:taskAffinity="apps.droidnotify.preferences"
+			android:screenOrientation="user"
+			android:configChanges="orientation|keyboardHidden|keyboard|navigation" />  
+         
+        <activity 
+        	android:name="apps.droidnotify.preferences.QuickReplyPreferenceActivity"
+    		android:theme="@android:style/Theme.Black.NoTitleBar"
+   			android:launchMode="singleTask"
+   			android:taskAffinity="apps.droidnotify.preferences"
+			android:screenOrientation="user"
+			android:configChanges="orientation|keyboardHidden|keyboard|navigation" />
+         
+        <activity 
+        	android:name="apps.droidnotify.preferences.LocalePreferenceActivity"
+    		android:theme="@android:style/Theme.Black.NoTitleBar"
+   			android:launchMode="singleTask"
+   			android:taskAffinity="apps.droidnotify.preferences"
+			android:screenOrientation="user"
+			android:configChanges="orientation|keyboardHidden|keyboard|navigation" /> 
+         
+        <activity 
+        	android:name="apps.droidnotify.preferences.ScreenPreferenceActivity"
+    		android:theme="@android:style/Theme.Black.NoTitleBar"
+   			android:launchMode="singleTask"
+   			android:taskAffinity="apps.droidnotify.preferences"
+			android:screenOrientation="user"
+			android:configChanges="orientation|keyboardHidden|keyboard|navigation" /> 
+         
+        <activity 
+        	android:name="apps.droidnotify.preferences.CustomizePreferenceActivity"
+    		android:theme="@android:style/Theme.Black.NoTitleBar"
+   			android:launchMode="singleTask"
+   			android:taskAffinity="apps.droidnotify.preferences"
+			android:screenOrientation="user"
+			android:configChanges="orientation|keyboardHidden|keyboard|navigation" /> 
+         
+        <activity 
+        	android:name="apps.droidnotify.preferences.theme.ThemePreferenceActivity"
+    		android:theme="@android:style/Theme.Black.NoTitleBar"
+   			android:launchMode="singleTask"
+   			android:taskAffinity="apps.droidnotify.preferences"
+			android:screenOrientation="user"
+			android:configChanges="orientation|keyboardHidden|keyboard|navigation" />
+         
+        <activity 
+        	android:name="apps.droidnotify.preferences.NotificationsPreferenceActivity"
+    		android:theme="@android:style/Theme.Black.NoTitleBar"
+   			android:launchMode="singleTask"
+   			android:taskAffinity="apps.droidnotify.preferences"
+			android:screenOrientation="user"
+			android:configChanges="orientation|keyboardHidden|keyboard|navigation" /> 
+         
+        <activity 
+        	android:name="apps.droidnotify.preferences.UpgradePreferenceActivity"
+    		android:theme="@android:style/Theme.Black.NoTitleBar"
+   			android:launchMode="singleTask"
+   			android:taskAffinity="apps.droidnotify.preferences"
+			android:screenOrientation="user"
+			android:configChanges="orientation|keyboardHidden|keyboard|navigation" /> 
+         
+        <activity 
+        	android:name="apps.droidnotify.preferences.sms.SMSPreferenceActivity"
+    		android:theme="@android:style/Theme.Black.NoTitleBar"
+   			android:launchMode="singleTask"
+   			android:taskAffinity="apps.droidnotify.preferences"
+			android:screenOrientation="user"
+			android:configChanges="orientation|keyboardHidden|keyboard|navigation" /> 
+         
+        <activity 
+        	android:name="apps.droidnotify.preferences.sms.SMSStatusBarNotificationsPreferenceActivity"
+    		android:theme="@android:style/Theme.Black.NoTitleBar"
+   			android:launchMode="singleTask"
+   			android:taskAffinity="apps.droidnotify.preferences"
+			android:screenOrientation="user"
+			android:configChanges="orientation|keyboardHidden|keyboard|navigation" /> 
+         
+        <activity 
+        	android:name="apps.droidnotify.preferences.sms.SMSCustomizePreferenceActivity"
+    		android:theme="@android:style/Theme.Black.NoTitleBar"
+   			android:launchMode="singleTask"
+   			android:taskAffinity="apps.droidnotify.preferences"
+			android:screenOrientation="user"
+			android:configChanges="orientation|keyboardHidden|keyboard|navigation" />
+
+        <activity 
+        	android:name="apps.droidnotify.preferences.sms.MMSPreferenceActivity"
+    		android:theme="@android:style/Theme.Black.NoTitleBar"
+   			android:launchMode="singleTask"
+   			android:taskAffinity="apps.droidnotify.preferences"
+			android:screenOrientation="user"
+			android:configChanges="orientation|keyboardHidden|keyboard|navigation" /> 
+         
+        <activity 
+        	android:name="apps.droidnotify.preferences.sms.MMSStatusBarNotificationsPreferenceActivity"
+    		android:theme="@android:style/Theme.Black.NoTitleBar"
+   			android:launchMode="singleTask"
+   			android:taskAffinity="apps.droidnotify.preferences"
+			android:screenOrientation="user"
+			android:configChanges="orientation|keyboardHidden|keyboard|navigation" /> 
+         
+        <activity 
+        	android:name="apps.droidnotify.preferences.sms.MMSCustomizePreferenceActivity"
+    		android:theme="@android:style/Theme.Black.NoTitleBar"
+   			android:launchMode="singleTask"
+   			android:taskAffinity="apps.droidnotify.preferences"
+			android:screenOrientation="user"
+			android:configChanges="orientation|keyboardHidden|keyboard|navigation" />
+
+        <activity 
+        	android:name="apps.droidnotify.preferences.phone.PhonePreferenceActivity"
+    		android:theme="@android:style/Theme.Black.NoTitleBar"
+   			android:launchMode="singleTask"
+   			android:taskAffinity="apps.droidnotify.preferences"
+			android:screenOrientation="user"
+			android:configChanges="orientation|keyboardHidden|keyboard|navigation" /> 
+         
+        <activity 
+        	android:name="apps.droidnotify.preferences.phone.PhoneStatusBarNotificationsPreferenceActivity"
+    		android:theme="@android:style/Theme.Black.NoTitleBar"
+   			android:launchMode="singleTask"
+   			android:taskAffinity="apps.droidnotify.preferences"
+			android:screenOrientation="user"
+			android:configChanges="orientation|keyboardHidden|keyboard|navigation" /> 
+         
+        <activity 
+        	android:name="apps.droidnotify.preferences.phone.PhoneCustomizePreferenceActivity"
+    		android:theme="@android:style/Theme.Black.NoTitleBar"
+   			android:launchMode="singleTask"
+   			android:taskAffinity="apps.droidnotify.preferences"
+			android:screenOrientation="user"
+			android:configChanges="orientation|keyboardHidden|keyboard|navigation" />
+
+        <activity 
+        	android:name="apps.droidnotify.preferences.calendar.CalendarPreferenceActivity"
+    		android:theme="@android:style/Theme.Black.NoTitleBar"
+   			android:launchMode="singleTask"
+   			android:taskAffinity="apps.droidnotify.preferences"
+			android:screenOrientation="user"
+			android:configChanges="orientation|keyboardHidden|keyboard|navigation" /> 
+         
+        <activity 
+        	android:name="apps.droidnotify.preferences.calendar.CalendarStatusBarNotificationsPreferenceActivity"
+    		android:theme="@android:style/Theme.Black.NoTitleBar"
+   			android:launchMode="singleTask"
+   			android:taskAffinity="apps.droidnotify.preferences"
+			android:screenOrientation="user"
+			android:configChanges="orientation|keyboardHidden|keyboard|navigation" /> 
+         
+        <activity 
+        	android:name="apps.droidnotify.preferences.calendar.CalendarCustomizePreferenceActivity"
+    		android:theme="@android:style/Theme.Black.NoTitleBar"
+   			android:launchMode="singleTask"
+   			android:taskAffinity="apps.droidnotify.preferences"
+			android:screenOrientation="user"
+			android:configChanges="orientation|keyboardHidden|keyboard|navigation" />
+
+        <activity 
+        	android:name="apps.droidnotify.preferences.k9.K9PreferenceActivity"
+    		android:theme="@android:style/Theme.Black.NoTitleBar"
+   			android:launchMode="singleTask"
+   			android:taskAffinity="apps.droidnotify.preferences"
+			android:screenOrientation="user"
+			android:configChanges="orientation|keyboardHidden|keyboard|navigation" /> 
+         
+        <activity 
+        	android:name="apps.droidnotify.preferences.k9.K9StatusBarNotificationsPreferenceActivity"
+    		android:theme="@android:style/Theme.Black.NoTitleBar"
+   			android:launchMode="singleTask"
+   			android:taskAffinity="apps.droidnotify.preferences"
+			android:screenOrientation="user"
+			android:configChanges="orientation|keyboardHidden|keyboard|navigation" /> 
+         
+        <activity 
+        	android:name="apps.droidnotify.preferences.k9.K9CustomizePreferenceActivity"
+    		android:theme="@android:style/Theme.Black.NoTitleBar"
+   			android:launchMode="singleTask"
+   			android:taskAffinity="apps.droidnotify.preferences"
+			android:screenOrientation="user"
+			android:configChanges="orientation|keyboardHidden|keyboard|navigation" /> 
+         
+        <activity 
+        	android:name="apps.droidnotify.preferences.k9.K9DownloadPreferenceActivity"
+    		android:theme="@android:style/Theme.Black.NoTitleBar"
+   			android:launchMode="singleTask"
+   			android:taskAffinity="apps.droidnotify.preferences"
+			android:screenOrientation="user"
+			android:configChanges="orientation|keyboardHidden|keyboard|navigation" /> 
+         
+        <activity 
+        	android:name="apps.droidnotify.preferences.AddOnsActivity"
+    		android:theme="@android:style/Theme.Black.NoTitleBar"
+   			android:launchMode="singleTask"
+   			android:taskAffinity="apps.droidnotify.preferences"
+			android:screenOrientation="user"
+			android:configChanges="orientation|keyboardHidden|keyboard|navigation" />
+         
+        <activity 
+        	android:name="apps.droidnotify.preferences.PrivacyPreferenceActivity"
+    		android:theme="@android:style/Theme.Black.NoTitleBar"
+   			android:launchMode="singleTask"
+   			android:taskAffinity="apps.droidnotify.preferences"
+			android:screenOrientation="user"
+			android:configChanges="orientation|keyboardHidden|keyboard|navigation" />  
+ 
+        <activity 
+        	android:name="apps.droidnotify.preferences.AdvancedPreferenceActivity"
+    		android:theme="@android:style/Theme.Black.NoTitleBar"
+   			android:launchMode="singleTask"
+   			android:taskAffinity="apps.droidnotify.preferences"
+			android:screenOrientation="user"
+			android:configChanges="orientation|keyboardHidden|keyboard|navigation" />
+ 
+        <activity 
+        	android:name="apps.droidnotify.preferences.DebugPreferenceActivity"
+    		android:theme="@android:style/Theme.Black.NoTitleBar"
+   			android:launchMode="singleTask"
+   			android:taskAffinity="apps.droidnotify.preferences"
+			android:screenOrientation="user"
+			android:configChanges="orientation|keyboardHidden|keyboard|navigation" />
+        
+        <activity 
+        	android:name="apps.droidnotify.preferences.AboutPreferenceActivity"
+    		android:theme="@android:style/Theme.Black.NoTitleBar"
+   			android:launchMode="singleTask"
+   			android:taskAffinity="apps.droidnotify.preferences"
+			android:screenOrientation="user"
+			android:configChanges="orientation|keyboardHidden|keyboard|navigation" />
+        
+    	<activity
+   			android:name="apps.droidnotify.NotificationActivity"
+   			android:theme="@android:style/Theme.Translucent.NoTitleBar"
+   			android:launchMode="singleTask"
+   			android:taskAffinity="apps.droidnotify.notification"
+			android:screenOrientation="user"
+			android:configChanges="orientation|keyboardHidden|keyboard|navigation" />
+	
+		<activity 
+   			android:name="apps.droidnotify.QuickReplyActivity" 
+   			android:theme="@style/Theme.Transparent"
+   			android:taskAffinity="apps.droidnotify.notification"
+			android:screenOrientation="user"
+			android:configChanges="orientation|keyboardHidden|keyboard|navigation"
+        	android:windowSoftInputMode="stateVisible" />
+
+		<service android:name="apps.droidnotify.services.CalendarAlarmReceiverService" />
+		<service android:name="apps.droidnotify.services.CalendarNotificationAlarmBroadcastReceiverService" />
+		<service android:name="apps.droidnotify.services.CalendarService" />
+
+		<service android:name="apps.droidnotify.services.K9AlarmBroadcastReceiverService" />
+		<service android:name="apps.droidnotify.services.K9BroadcastReceiverService" />
+		<service android:name="apps.droidnotify.services.K9Service" />
+		
+        <service android:name="apps.droidnotify.services.MMSAlarmBroadcastReceiverService" />
+        <service android:name="apps.droidnotify.services.MMSBroadcastReceiverService" />
+        <service android:name="apps.droidnotify.services.MMSService" /> 
+
+        <service android:name="apps.droidnotify.services.OnBootService" />
+        
+        <service android:name="apps.droidnotify.services.PhoneAlarmBroadcastReceiverService" />
+        <service android:name="apps.droidnotify.services.PhoneBroadcastReceiverService" />
+       	<service android:name="apps.droidnotify.services.PhoneService" />
+
+		<service android:name="apps.droidnotify.services.RescheduleService" />
+       	
+        <service android:name="apps.droidnotify.services.ScreenManagementAlarmBroadcastReceiverService" />
+		
+        <service android:name="apps.droidnotify.services.SMSAlarmBroadcastReceiverService" />
+        <service android:name="apps.droidnotify.services.SMSBroadcastReceiverService" />
+        <service android:name="apps.droidnotify.services.SMSService" />
+        
+        <service android:name="apps.droidnotify.services.GenericNotificationService" />
+        
+        <service android:name="apps.droidnotify.services.OnFirstRunService" />
+        
+        <service android:name="apps.droidnotify.services.OnUpdateService" />
+        
+		<receiver 
+		    android:name="apps.droidnotify.receivers.CalendarAlarmReceiver"
+		    android:exported="true" />
+		<receiver 
+		    android:name="apps.droidnotify.receivers.CalendarNotificationAlarmReceiver"
+		    android:exported="true" />
+		
+		<receiver 
+		    android:name="apps.droidnotify.receivers.K9AlarmReceiver"
+		    android:exported="true" />
+		<receiver 
+		    android:name="apps.droidnotify.receivers.K9Receiver"
+		    android:exported="true">
+			<intent-filter>
+				<action android:name="com.fsck.k9.intent.action.EMAIL_RECEIVED" />
+				<data android:scheme="email" android:host="messages" />
+			</intent-filter>
+			<intent-filter>
+				<action android:name="com.kaitenmail.intent.action.EMAIL_RECEIVED" />
+				<data android:scheme="email" android:host="messages" />
+			</intent-filter>
+			<intent-filter>
+				<action android:name="com.kaitenmail.intent.action.EMAIL_RECEIVED" />
+				<data android:scheme="email" android:host="kaitenmail.com" />
+			</intent-filter>
+		</receiver>
+		    	    
+        <receiver 
+            android:name="apps.droidnotify.receivers.MMSAlarmReceiver"
+		    android:exported="true" />
+        <receiver 
+		    android:name="apps.droidnotify.receivers.MMSReceiver"
+		    android:exported="true"> 
+			<intent-filter android:priority="2147483647">
+                <action android:name="android.provider.Telephony.WAP_PUSH_RECEIVED" />
+                <data android:mimeType="application/vnd.wap.mms-message" />
+            </intent-filter>
+            <intent-filter android:priority="2147483647"> 
+                <action android:name="android.provider.Telephony.MMS_RECEIVED" /> 
+            </intent-filter>
+        </receiver>
+        
+        <receiver 
+		    android:name="apps.droidnotify.receivers.OnBootReceiver"
+		    android:exported="true" >
+			<intent-filter>
+				<action android:name="android.intent.action.BOOT_COMPLETED" />
+			</intent-filter>
+		</receiver>
+   		
+   		<receiver 
+   		    android:name="apps.droidnotify.receivers.PhoneReceiver"
+		    android:exported="true" > 
+            <intent-filter android:priority="2147483647"> 
+                <action android:name="android.intent.action.PHONE_STATE" />
+            </intent-filter> 
+        </receiver>        
+        <receiver 
+            android:name="apps.droidnotify.receivers.PhoneAlarmReceiver"
+		    android:exported="true" />
+		
+		<receiver 
+		    android:name="apps.droidnotify.receivers.RescheduleReceiver"
+		    android:exported="true" />
+
+		<receiver 
+		    android:name="apps.droidnotify.receivers.ScreenManagementAlarmReceiver"
+		    android:exported="true" />
+		
+        <receiver 
+            android:name="apps.droidnotify.receivers.SMSAlarmReceiver"
+		    android:exported="true" />
+		<receiver 
+		    android:name="apps.droidnotify.receivers.SMSReceiver"
+		    android:exported="true">           
+			<intent-filter android:priority="2147483647"> 
+	        	<action android:name="android.provider.Telephony.SMS_RECEIVED" /> 
+	        </intent-filter> 
+	    </receiver>
+
+		<receiver 
+		    android:name="apps.droidnotify.receivers.GenericNotificationReceiver"
+		    android:exported="true">			
+			<intent-filter>
+				<action android:name="apps.droidnotify.api.NOTIFICATION_RECEIVED" />
+	        </intent-filter>
+        </receiver>
+        
+        <receiver android:name="apps.droidnotify.receivers.OnUpdateReceiver">
+	        <intent-filter>
+	            <action android:name="android.intent.action.PACKAGE_REPLACED" />
+	            <data android:scheme="package" />
+	        </intent-filter>
+	    </receiver>
+		
+    </application>
+
+</manifest>

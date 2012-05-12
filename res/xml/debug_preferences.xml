@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:key="debug_settings_screen">	
+	<CheckBoxPreference
+		android:layout="@layout/custom_preference_checkbox"
+		android:key="debug_log_enabled" 
+       	android:title="@string/preference_debug_log_title" 
+       	android:summary="@string/preference_debug_log_summary"
+       	android:defaultValue="false" />
+	<Preference
+		android:layout="@layout/custom_preference"
+        android:key="send_debug_logs"
+       	android:title="@string/send_debug_logs_text"
+        android:summary="@string/send_debug_logs_summary" />	
+</PreferenceScreen>

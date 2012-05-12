@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/856/trunk/src/apps/droidnotify/preferences/phone
+END
+PhonePreferenceActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/856/trunk/src/apps/droidnotify/preferences/phone/PhonePreferenceActivity.java
+END
+PhoneStatusBarNotificationsPreferenceActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/!svn/ver/856/trunk/src/apps/droidnotify/preferences/phone/PhoneStatusBarNotificationsPreferenceActivity.java
+END
+PhoneCustomizePreferenceActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/856/trunk/src/apps/droidnotify/preferences/phone/PhoneCustomizePreferenceActivity.java
+END

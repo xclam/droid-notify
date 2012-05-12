@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:key="mms_status_bar_notifications_settings_screen">	
+	<PreferenceCategory
+		android:layout="@layout/custom_preference_category"
+		android:key="general_category"
+		android:title="@string/general_category">	
+		<CheckBoxPreference
+			android:layout="@layout/custom_preference_checkbox" 
+			android:key="mms_hide_notification_body_enabled" 
+			android:title="@string/hide_notification_body_title" 
+			android:summary="@string/hide_notification_body_summary"
+			android:defaultValue="false" />	
+		<ListPreference
+			android:layout="@layout/custom_preference_list"
+			android:key="mms_notification_count_action"
+			android:title="@string/preference_notification_count_button_action"
+			android:summary="@string/preference_notification_count_button_action_summary"
+			android:defaultValue="0"
+			android:entries="@array/mms_notification_count_button_options"
+			android:entryValues="@array/mms_notification_count_button_values"/>
+	</PreferenceCategory>
+	<PreferenceCategory
+		android:layout="@layout/custom_preference_category"
+		android:key="buttons_category"
+		android:title="@string/buttons_category">
+		<CheckBoxPreference
+			android:layout="@layout/custom_preference_checkbox"
+			android:key="confirm_mms_deletion" 
+			android:title="@string/preference_confirm_deletion_title" 
+			android:summary="@string/preference_confirm_deletion_summary"
+			android:defaultValue="true" />	
+		<CheckBoxPreference
+			android:layout="@layout/custom_preference_checkbox" 
+			android:key="mms_display_dismiss_button" 
+			android:title="@string/preference_display_dismiss_button_title" 
+			android:summary="@string/preference_display_dismiss_button_summary"
+			android:defaultValue="true" />
+		<ListPreference
+			android:layout="@layout/custom_preference_list"
+			android:key="mms_dismiss_button_action"
+			android:title="@string/preference_dismiss_button_action"
+			android:summary="@string/preference_dismiss_button_action_summary"
+			android:defaultValue="0"
+			android:entries="@array/mms_dismiss_button_options"
+			android:entryValues="@array/mms_dismiss_button_values"
+			android:dependency="mms_display_dismiss_button" />
+		<CheckBoxPreference
+			android:layout="@layout/custom_preference_checkbox" 
+			android:key="mms_display_delete_button" 
+			android:title="@string/preference_display_delete_button_title" 
+			android:summary="@string/preference_display_delete_button_summary"
+			android:defaultValue="true" />
+		<ListPreference
+			android:layout="@layout/custom_preference_list"
+			android:key="mms_delete_button_action"
+			android:title="@string/preference_delete_button_action"
+			android:summary="@string/preference_delete_button_action_summary"
+			android:defaultValue="0"
+			android:entries="@array/mms_delete_button_options"
+			android:entryValues="@array/mms_delete_button_values"
+			android:dependency="mms_display_delete_button" />
+		<CheckBoxPreference
+			android:layout="@layout/custom_preference_checkbox" 
+			android:key="mms_display_reply_button" 
+			android:title="@string/preference_display_reply_button_title" 
+			android:summary="@string/preference_display_reply_button_summary"
+			android:defaultValue="true" />
+		<ListPreference
+			android:layout="@layout/custom_preference_list"
+			android:key="mms_reply_button_action"
+			android:title="@string/preference_reply_button_action"
+			android:summary="@string/preference_reply_button_action_summary"
+			android:defaultValue="0"
+			android:entries="@array/mms_reply_button_options"
+			android:entryValues="@array/mms_reply_button_values"
+			android:dependency="mms_display_reply_button" />
+	</PreferenceCategory>
+</PreferenceScreen>

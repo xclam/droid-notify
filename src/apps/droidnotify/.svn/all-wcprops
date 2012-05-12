@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/864/trunk/src/apps/droidnotify
+END
+NotificationView.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/856/trunk/src/apps/droidnotify/NotificationView.java
+END
+NotificationViewFlipper.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/858/trunk/src/apps/droidnotify/NotificationViewFlipper.java
+END
+NotificationActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/858/trunk/src/apps/droidnotify/NotificationActivity.java
+END
+QuickReplyView.java
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/856/trunk/src/apps/droidnotify/QuickReplyView.java
+END
+QuickReplyActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/856/trunk/src/apps/droidnotify/QuickReplyActivity.java
+END
+Notification.java
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/858/trunk/src/apps/droidnotify/Notification.java
+END
+MyApplication.java
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/864/trunk/src/apps/droidnotify/MyApplication.java
+END

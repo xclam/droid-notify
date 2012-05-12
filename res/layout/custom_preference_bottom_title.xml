@@ -1,0 +1,19 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:paddingRight="?android:attr/scrollbarSize"
+    android:paddingLeft="?android:attr/scrollbarSize"
+	android:orientation="vertical"
+	android:background="@drawable/preference_row_click"
+    android:layout_marginTop="6dp"
+    android:layout_marginBottom="6dp">	    
+	<TextView android:id="@+android:id/title"
+		android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+    	android:minHeight="?android:attr/listPreferredItemHeight"	            
+    	android:layout_gravity="center_vertical"	            
+    	android:gravity="center_vertical"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+    	android:paddingLeft="12dp" />    
+</LinearLayout>

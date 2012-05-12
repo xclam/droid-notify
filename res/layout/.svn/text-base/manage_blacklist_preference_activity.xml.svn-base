@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content_relataive_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    <!-- Preference Header -->
+    <TextView
+        android:id="@+id/header_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:drawableLeft="@drawable/ic_launcher"
+        android:drawablePadding="2dp"
+        android:gravity="center|left"
+        android:paddingLeft="8dp"
+        android:text="@string/blacklist"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    <ImageView
+        android:id="@+id/header_title_divider"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/header_title"
+        android:src="@drawable/preference_divider_header" />
+	<LinearLayout
+		android:id="@+id/top_buttons_linear_layout"
+	    android:layout_height="wrap_content"
+	    android:layout_width="fill_parent"
+		android:orientation="vertical"        
+	    android:layout_below="@+id/header_title_divider">
+	    <!-- Add Contact Button -->
+	    <TextView
+	        android:id="@+id/add_contact_button"
+	        android:layout_width="fill_parent"
+	        android:layout_height="?android:attr/listPreferredItemHeight"
+	        android:clickable="true"
+	        android:gravity="center_vertical|center_horizontal"
+	        android:paddingBottom="15dp"
+	        android:paddingTop="15dp"
+	        android:text="@string/add_contact"
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+	    <ImageView
+	        android:id="@+id/add_contact_button_divider"
+	        android:layout_width="fill_parent"
+	        android:layout_height="0.5dp"
+	        android:src="@drawable/preference_divider_normal" />
+	    <!-- Add Button -->
+	    <TextView
+	        android:id="@+id/add_other_button"
+	        android:layout_width="fill_parent"
+	        android:layout_height="?android:attr/listPreferredItemHeight"
+	        android:clickable="true"
+	        android:gravity="center_vertical|center_horizontal"
+	        android:paddingBottom="15dp"
+	        android:paddingTop="15dp"
+	        android:text="@string/add_other"
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+	    <ImageView
+	        android:id="@+id/add_other_button_divider"
+	        android:layout_width="fill_parent"
+	        android:layout_height="0.5dp"
+	        android:src="@drawable/preference_divider_normal" />
+	</LinearLayout>
+	<!-- Loading Spinner-->
+	<ProgressBar
+	    android:id="@+id/progress_bar"
+	    style="@android:style/Widget.ProgressBar.Large"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center_horizontal|center_vertical"
+	    android:paddingTop="20dp"
+	    android:layout_below="@+id/header_title_divider"
+		android:layout_centerHorizontal="true"
+	    android:visibility="invisible" />
+	<!-- Other Blacklist Item-->
+	<ScrollView 
+		android:id="@+id/scroll_view"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/header_title_divider"
+	    android:layout_above="@+id/button_divider"
+		android:visibility="invisible">
+		<LinearLayout
+			android:id="@+id/linear_layout"
+		    android:layout_height="wrap_content"
+		    android:layout_width="fill_parent"
+			android:orientation="vertical">
+			<LinearLayout
+				android:id="@+id/name_content_linear_layout"
+			    android:layout_height="wrap_content"
+			    android:layout_width="fill_parent"
+				android:orientation="horizontal"
+	        	android:paddingTop="15dp">		
+			    <TextView
+			        android:id="@+id/name_title"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="10dp"
+					android:paddingTop="10dp"
+			        android:paddingLeft="5dp"
+			        android:textAppearance="?android:attr/textAppearanceMedium" 
+					android:textStyle="bold"
+			        android:text="@string/name" />
+			    <TextView
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+					android:paddingTop="10dp"
+					android:paddingRight="5dp"
+			        android:text="@string/colon" />
+			    <EditText
+			        android:id="@+id/name_edit_text"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginRight="10dp"
+					android:paddingTop="10dp"
+			        android:textAppearance="?android:attr/textAppearanceMedium"
+			        android:inputType="text" />
+			</LinearLayout>
+			<LinearLayout
+				android:id="@+id/identifier_content_linear_layout"
+			    android:layout_height="wrap_content"
+			    android:layout_width="fill_parent"
+				android:orientation="horizontal">		
+			    <TextView
+			        android:id="@+id/identifier_title"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="10dp"
+					android:paddingTop="10dp"
+			        android:paddingLeft="5dp"
+			        android:textAppearance="?android:attr/textAppearanceMedium" 
+					android:textStyle="bold"
+			        android:text="@string/identifier" />
+			    <TextView
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+					android:paddingTop="10dp"
+					android:paddingRight="5dp"
+			        android:text="@string/colon" />
+			    <EditText
+			        android:id="@+id/identifier_edit_text"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginRight="10dp"
+					android:paddingTop="10dp"
+			        android:textAppearance="?android:attr/textAppearanceMedium"
+			        android:inputType="text" />
+			</LinearLayout>
+		</LinearLayout>
+	</ScrollView>
+    <!-- Buttons -->
+    <ImageView
+        android:id="@+id/button_divider"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:src="@drawable/preference_divider_normal"
+        android:layout_above="@+id/button_relative_layout"
+		android:visibility="invisible" />
+	<RelativeLayout
+	    android:id="@+id/button_relative_layout"
+	    android:layout_width="fill_parent"
+	    android:layout_height="?android:attr/listPreferredItemHeight"
+	    android:orientation="vertical"	        
+	    android:layout_alignParentBottom="true"
+		android:visibility="invisible" >
+	    <TextView
+	        android:id="@+id/save_button"
+	        android:layout_width="wrap_content"
+	        android:layout_height="?android:attr/listPreferredItemHeight"
+	        android:layout_alignParentBottom="true"
+	        android:layout_alignParentLeft="true"
+	        android:layout_toLeftOf="@+id/button_divider_center"
+	        android:clickable="true"
+	        android:gravity="center_vertical|center_horizontal"
+	        android:paddingBottom="15dp"
+	        android:paddingTop="15dp"
+	        android:text="@string/save"
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+	    <ImageView
+	        android:id="@+id/button_divider_center"
+	        android:layout_width="0.5dp"
+	        android:layout_height="?android:attr/listPreferredItemHeight"
+	        android:src="@drawable/preference_divider_normal"
+	        android:layout_alignParentBottom="true"
+	        android:layout_centerHorizontal="true"
+	        android:paddingTop="2dp" />
+	    <TextView
+	        android:id="@+id/cancel_button"
+	        android:layout_width="wrap_content"
+	        android:layout_height="?android:attr/listPreferredItemHeight"
+	        android:layout_alignParentBottom="true"
+	        android:layout_alignParentRight="true"
+	        android:layout_toRightOf="@+id/button_divider_center"
+	        android:clickable="true"
+	        android:gravity="center_vertical|center_horizontal"
+	        android:paddingBottom="15dp"
+	        android:paddingTop="15dp"
+	        android:text="@string/cancel"
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+	</RelativeLayout>
+</RelativeLayout>

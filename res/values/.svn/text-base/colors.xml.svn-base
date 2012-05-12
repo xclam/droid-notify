@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="blue">#ff31b6ef</color>
+    <color name="grey">#ff808080</color>
+	<color name="white">#ffffffff</color>
+    <color name="black">#ff000000</color>
+	
+	<color name="transparent">#00000000</color>
+	<color name="text_color">#ffffffff</color>
+	<color name="notification_count_text_color">#ffffffff</color>
+	<color name="header_info_text_color">#ffffffff</color>
+	<color name="contact_name_text_color">#ffffffff</color>
+	<color name="contact_number_text_color">#ffffffff</color>
+	<color name="body_text_color">#ffffffff</color>
+	<color name="button_text_color">#ffffffff</color>
+	<color name="list_selector_text_color">#ffffffff</color>
+	<color name="list_selector_transition_text_color">#ff000000</color>
+</resources>

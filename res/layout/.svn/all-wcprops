@@ -1,0 +1,251 @@
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/svn/!svn/ver/856/trunk/res/layout
+END
+status_bar_notifications_preferences.xml
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/856/trunk/res/layout/status_bar_notifications_preferences.xml
+END
+add_ons_activity.xml
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/856/trunk/res/layout/add_ons_activity.xml
+END
+sms_preferences.xml
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/856/trunk/res/layout/sms_preferences.xml
+END
+about_preference_activity.xml
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/856/trunk/res/layout/about_preference_activity.xml
+END
+k9_download_preference_activity.xml
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/856/trunk/res/layout/k9_download_preference_activity.xml
+END
+notification_wrapper.xml
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/856/trunk/res/layout/notification_wrapper.xml
+END
+quiet_time_period_dialog.xml
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/856/trunk/res/layout/quiet_time_period_dialog.xml
+END
+advanced_preferences.xml
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/856/trunk/res/layout/advanced_preferences.xml
+END
+calendar_preferences.xml
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/856/trunk/res/layout/calendar_preferences.xml
+END
+preference_activity.xml
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/856/trunk/res/layout/preference_activity.xml
+END
+notification_preference_activity.xml
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/856/trunk/res/layout/notification_preference_activity.xml
+END
+screen_preferences.xml
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/856/trunk/res/layout/screen_preferences.xml
+END
+basic_preferences.xml
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/856/trunk/res/layout/basic_preferences.xml
+END
+custom_preference_list.xml
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/856/trunk/res/layout/custom_preference_list.xml
+END
+k9_preferences.xml
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/856/trunk/res/layout/k9_preferences.xml
+END
+reschedule_preferences.xml
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/856/trunk/res/layout/reschedule_preferences.xml
+END
+custom_preference_category.xml
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/856/trunk/res/layout/custom_preference_category.xml
+END
+debug_preferences.xml
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/856/trunk/res/layout/debug_preferences.xml
+END
+manage_custom_contact_preference_activity.xml
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/856/trunk/res/layout/manage_custom_contact_preference_activity.xml
+END
+theme_notification.xml
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/856/trunk/res/layout/theme_notification.xml
+END
+vibrate_pattern_dialog.xml
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/856/trunk/res/layout/vibrate_pattern_dialog.xml
+END
+locale_preferences.xml
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/856/trunk/res/layout/locale_preferences.xml
+END
+led_pattern_dialog.xml
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/856/trunk/res/layout/led_pattern_dialog.xml
+END
+missed_calls_preferences.xml
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/856/trunk/res/layout/missed_calls_preferences.xml
+END
+quiet_time_preferences.xml
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/856/trunk/res/layout/quiet_time_preferences.xml
+END
+reminder_preferences.xml
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/856/trunk/res/layout/reminder_preferences.xml
+END
+notification.xml
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/856/trunk/res/layout/notification.xml
+END
+manage_blacklist_preference_activity.xml
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/856/trunk/res/layout/manage_blacklist_preference_activity.xml
+END
+listitem.xml
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/550/trunk/res/layout/listitem.xml
+END
+reply.xml
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/856/trunk/res/layout/reply.xml
+END
+custom_preference_bottom.xml
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/856/trunk/res/layout/custom_preference_bottom.xml
+END
+custom_preference_bottom_title.xml
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/856/trunk/res/layout/custom_preference_bottom_title.xml
+END
+privacy_preferences.xml
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/856/trunk/res/layout/privacy_preferences.xml
+END
+upgrade_preference_activity.xml
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/856/trunk/res/layout/upgrade_preference_activity.xml
+END
+customize_preferences.xml
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/856/trunk/res/layout/customize_preferences.xml
+END
+custom_preference.xml
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/856/trunk/res/layout/custom_preference.xml
+END
+quick_reply_preferences.xml
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/856/trunk/res/layout/quick_reply_preferences.xml
+END
+custom_preference_title.xml
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/856/trunk/res/layout/custom_preference_title.xml
+END
+theme_preference_activity.xml
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/856/trunk/res/layout/theme_preference_activity.xml
+END
+mms_preferences.xml
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/856/trunk/res/layout/mms_preferences.xml
+END
+custom_preference_checkbox.xml
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/856/trunk/res/layout/custom_preference_checkbox.xml
+END

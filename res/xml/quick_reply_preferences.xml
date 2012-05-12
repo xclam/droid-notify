@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:key="quick_reply_settings_screen">
+	<CheckBoxPreference
+		android:layout="@layout/custom_preference_checkbox"
+		android:key="quick_reply_save_draft_enabled" 
+		android:title="@string/preference_save_draft_enabled_title" 
+		android:summaryOn="@string/preference_save_draft_enabled_summaryOn" 
+		android:summaryOff="@string/preference_save_draft_enabled_summaryOff" 
+		android:defaultValue="true" />
+	<CheckBoxPreference
+		android:layout="@layout/custom_preference_checkbox"
+		android:key="quick_reply_blur_screen_background_enabled" 
+		android:title="@string/preference_blur_screen_background_enabled_title" 
+		android:summaryOn="@string/preference_quick_reply_blur_screen_background_enabled_summaryOn" 
+		android:summaryOff="@string/preference_quick_reply_blur_screen_background_enabled_summaryOff" 
+		android:defaultValue="false" />
+	<CheckBoxPreference 
+		android:layout="@layout/custom_preference_checkbox"
+		android:key="quick_reply_dim_screen_background_enabled" 
+		android:title="@string/preference_dim_screen_background_enabled_title" 
+		android:summaryOn="@string/preference_quick_reply_dim_screen_background_enabled_summaryOn" 
+		android:summaryOff="@string/preference_quick_reply_dim_screen_background_enabled_summaryOff" 
+		android:defaultValue="true" />
+	<ListPreference
+		android:layout="@layout/custom_preference_list"
+		android:key="quick_reply_dim_screen_background_amount"
+		android:title="@string/preference_dim_screen_background_amount"
+		android:summary="@string/preference_dim_screen_background_amount_summary"
+		android:defaultValue="50"
+		android:entries="@array/dim_screen_background_amount_options"
+		android:entryValues="@array/dim_screen_background_amount_values"
+		android:dependency="quick_reply_dim_screen_background_enabled" />
+	<CheckBoxPreference 
+		android:layout="@layout/custom_preference_checkbox"
+		android:key="display_quick_reply_cancel_button" 
+		android:title="@string/display_cancel_button_title" 
+		android:summary="@string/display_cancel_button_summary"
+		android:defaultValue="false" />
+</PreferenceScreen>

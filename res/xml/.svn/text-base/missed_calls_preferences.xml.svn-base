@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:key="missed_calls_settings_screen">	
+	<PreferenceCategory
+		android:layout="@layout/custom_preference_category"
+		android:key="general_category"
+		android:title="@string/general_category">
+		<CheckBoxPreference
+			android:layout="@layout/custom_preference_checkbox"  
+			android:key="missed_call_notifications_enabled" 
+			android:title="@string/missed_call_enabled_title" 
+			android:summary="@string/missed_call_enabled_summary"
+			android:defaultValue="true" />
+		<ListPreference
+			android:layout="@layout/custom_preference_list"
+			android:key="missed_call_loading_settings"
+			android:title="@string/preference_missed_call_loading_title"
+			android:summary="@string/preference_missed_call_loading_summary"
+			android:defaultValue="0"
+			android:entries="@array/missed_call_loading_options"
+			android:entryValues="@array/missed_call_loading_values"
+			android:dependency="missed_call_notifications_enabled" />
+	</PreferenceCategory>
+	<PreferenceCategory
+		android:layout="@layout/custom_preference_category"
+		android:key="missed_call_status_bar_category"
+		android:title="@string/status_bar_category">						
+		<CheckBoxPreference
+			android:layout="@layout/custom_preference_checkbox"
+			android:key="missed_call_status_bar_notifications_enabled" 
+			android:title="@string/status_bar_notifications_enabled_title" 
+			android:summary="@string/status_bar_notifications_enabled_summary"
+			android:defaultValue="true"
+			android:dependency="missed_call_notifications_enabled" />
+		<Preference
+			android:layout="@layout/custom_preference_title"
+	        android:key="status_bar_notifications_preference"
+	       	android:title="@string/status_bar_notifications"
+			android:dependency="missed_call_status_bar_notifications_enabled" />
+	</PreferenceCategory>
+	<PreferenceCategory
+		android:layout="@layout/custom_preference_category"
+		android:key="missed_call_customize_category"
+		android:title="@string/customize_category">
+		<Preference
+			android:layout="@layout/custom_preference_bottom"
+	        android:key="customize_preference"
+	       	android:title="@string/customize"
+	       	android:summary="@string/customize_notification_summary"
+			android:dependency="missed_call_notifications_enabled" />
+	</PreferenceCategory> 
+</PreferenceScreen>

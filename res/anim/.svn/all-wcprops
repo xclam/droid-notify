@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 32
+/svn/!svn/ver/202/trunk/res/anim
+END
+accelerate_interpolator.xml
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/202/trunk/res/anim/accelerate_interpolator.xml
+END
+translucent_exit.xml
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/202/trunk/res/anim/translucent_exit.xml
+END
+translucent_enter.xml
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/202/trunk/res/anim/translucent_enter.xml
+END
+decelerate_interpolator.xml
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/202/trunk/res/anim/decelerate_interpolator.xml
+END

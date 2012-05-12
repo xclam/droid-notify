@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/row_linear_layout_1"
+   	android:layout_height="wrap_content"
+   	android:layout_width="fill_parent"
+   	android:orientation="vertical">
+   	
+    <!-- Preference Header-->
+	<TextView
+	    android:id="@+id/header_title"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center_vertical"
+	    android:gravity="center|left"
+	    android:paddingLeft="8dp"
+	    android:textAppearance="?android:attr/textAppearanceLarge"
+	    android:drawableLeft="@drawable/ic_launcher"
+	    android:drawablePadding="2dp"
+	    android:text="@string/notifications" />   
+	<ImageView
+       	android:id="@+id/header_title_divider"
+  		android:src="@drawable/preference_divider_header"
+  		android:layout_height="2dp"  
+		android:layout_width="fill_parent" />
+   
+	<ScrollView 
+		android:id="@+id/content_scroll_view"
+	    android:layout_height="wrap_content"
+	    android:layout_width="fill_parent">
+		<LinearLayout
+			xmlns:android="http://schemas.android.com/apk/res/android"
+			android:id="@+id/content_linear_layout"
+		    android:layout_height="wrap_content"
+		    android:layout_width="fill_parent"
+			android:orientation="vertical"
+		    android:paddingRight="?android:attr/scrollbarSize"
+		    android:paddingLeft="?android:attr/scrollbarSize">
+			
+			<!-- Row - SMS-->
+		    <TextView
+		        android:id="@+id/row_sms"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+    			android:minHeight="?android:attr/listPreferredItemHeight"
+			    android:paddingTop="15dp"
+				android:paddingBottom="15dp"
+		        android:clickable="true"
+		        android:drawableLeft="@drawable/preference_ic_sms"
+		        android:drawablePadding="10dp"
+		        android:gravity="center_vertical"
+		        android:paddingLeft="5dp"
+		        android:text="@string/sms"
+		        android:textAppearance="?android:attr/textAppearanceLarge" />		 
+			<ImageView
+		        android:id="@+id/row_divider_sms"
+		  		android:src="@drawable/preference_divider_normal"
+		  		android:layout_height="0.5dp"  
+				android:layout_width="fill_parent" />
+			
+			<!-- Row - MMS-->
+		    <TextView
+		        android:id="@+id/row_mms"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+    			android:minHeight="?android:attr/listPreferredItemHeight"
+			    android:paddingTop="15dp"
+				android:paddingBottom="15dp"
+		        android:clickable="true"
+		        android:drawableLeft="@drawable/preference_ic_sms"
+		        android:drawablePadding="10dp"
+		        android:gravity="center_vertical"
+		        android:paddingLeft="5dp"
+		        android:text="@string/mms"
+		        android:textAppearance="?android:attr/textAppearanceLarge" />		 
+			<ImageView
+		        android:id="@+id/row_divider_mms"
+		  		android:src="@drawable/preference_divider_normal"
+		  		android:layout_height="0.5dp"  
+				android:layout_width="fill_parent" />	 
+
+			<!-- Row - Missed Calls-->
+		    <TextView
+		        android:id="@+id/row_missed_calls"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+    			android:minHeight="?android:attr/listPreferredItemHeight"
+			    android:paddingTop="15dp"
+				android:paddingBottom="15dp"
+		        android:clickable="true"
+		        android:drawableLeft="@drawable/preference_ic_missed_call"
+		        android:drawablePadding="10dp"
+		        android:gravity="center_vertical"
+		        android:paddingLeft="5dp"
+		        android:text="@string/missed_calls"
+		        android:textAppearance="?android:attr/textAppearanceLarge" />		 
+			<ImageView
+		        android:id="@+id/row_divider_missed_calls"
+		  		android:src="@drawable/preference_divider_normal"
+		  		android:layout_height="0.5dp"  
+				android:layout_width="fill_parent" />
+					   
+			<!-- Row - Calendar-->
+		    <TextView
+		        android:id="@+id/row_calendar"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+    			android:minHeight="?android:attr/listPreferredItemHeight"
+			    android:paddingTop="15dp"
+				android:paddingBottom="15dp"
+		        android:clickable="true"
+		        android:drawableLeft="@drawable/preference_ic_calendar"
+		        android:drawablePadding="10dp"
+		        android:gravity="center_vertical"
+		        android:paddingLeft="5dp"
+		        android:text="@string/calendar"
+		        android:textAppearance="?android:attr/textAppearanceLarge" />		 
+			<ImageView
+		        android:id="@+id/row_divider_calendar"
+		  		android:src="@drawable/preference_divider_normal"
+		  		android:layout_height="0.5dp"  
+				android:layout_width="fill_parent" />
+					   
+			<!-- Row - K9-->
+		    <TextView
+		        android:id="@+id/row_k9"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+    			android:minHeight="?android:attr/listPreferredItemHeight"
+			    android:paddingTop="15dp"
+				android:paddingBottom="15dp"
+		        android:clickable="true"
+		        android:drawableLeft="@drawable/preference_ic_k9"
+		        android:drawablePadding="10dp"
+		        android:gravity="center_vertical"
+		        android:paddingLeft="5dp"
+		        android:text="@string/k9"
+		        android:textAppearance="?android:attr/textAppearanceLarge" />		 
+			<ImageView
+		        android:id="@+id/row_divider_k9"
+		  		android:src="@drawable/preference_divider_normal"
+		  		android:layout_height="0.5dp"  
+				android:layout_width="fill_parent" />
+					   
+			<!-- Row - Twitter-->
+		    <TextView
+		        android:id="@+id/row_twitter"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+    			android:minHeight="?android:attr/listPreferredItemHeight"
+			    android:paddingTop="15dp"
+				android:paddingBottom="15dp"
+		        android:clickable="true"
+		        android:drawableLeft="@drawable/preference_ic_twitter"
+		        android:drawablePadding="10dp"
+		        android:gravity="center_vertical"
+		        android:paddingLeft="5dp"
+		        android:text="@string/twitter"
+		        android:textAppearance="?android:attr/textAppearanceLarge" />		 
+			<ImageView
+		        android:id="@+id/row_divider_twitter"
+		  		android:src="@drawable/preference_divider_normal"
+		  		android:layout_height="0.5dp"  
+				android:layout_width="fill_parent" />
+			
+			<!-- Row - Facebook-->
+		    <TextView
+		        android:id="@+id/row_facebook"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+    			android:minHeight="?android:attr/listPreferredItemHeight"
+			    android:paddingTop="15dp"
+				android:paddingBottom="15dp"
+		        android:clickable="true"
+		        android:drawableLeft="@drawable/preference_ic_facebook"
+		        android:drawablePadding="10dp"
+		        android:gravity="center_vertical"
+		        android:paddingLeft="5dp"
+		        android:text="@string/facebook"
+		        android:textAppearance="?android:attr/textAppearanceLarge" />		 
+			<ImageView
+		        android:id="@+id/row_divider_facebook"
+		  		android:src="@drawable/preference_divider_normal"
+		  		android:layout_height="0.5dp"  
+				android:layout_width="fill_parent" />
+			
+			<!-- Row - More-->
+		    <TextView
+		        android:id="@+id/row_more"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+    			android:minHeight="?android:attr/listPreferredItemHeight"
+			    android:paddingTop="15dp"
+				android:paddingBottom="15dp"
+		        android:clickable="true"
+		        android:drawableLeft="@drawable/preference_ic_more"
+		        android:drawablePadding="10dp"
+		        android:gravity="center_vertical"
+		        android:paddingLeft="5dp"
+		        android:text="@string/more"
+		        android:textAppearance="?android:attr/textAppearanceLarge" />
+			
+		</LinearLayout>
+	</ScrollView>
+	
+</LinearLayout>
