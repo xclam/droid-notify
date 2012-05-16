@@ -3,6 +3,7 @@ package apps.droidnotify;
 import java.io.InputStream;
 
 import android.app.AlertDialog;
+import android.app.Dialog;
 import android.app.PendingIntent;
 import android.app.PendingIntent.CanceledException;
 import android.content.ContentUris;
@@ -28,6 +29,7 @@ import android.util.TypedValue;
 import android.view.Gravity;
 import android.view.HapticFeedbackConstants;
 import android.view.View;
+import android.view.Window;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
@@ -92,6 +94,7 @@ public class NotificationView extends LinearLayout {
 	private Button _callButton = null;
 	private Button _replyButton = null;
 	private Button _viewButton = null;
+	private Button _smileyButton = null;
 	
 	private ImageButton _dismissImageButton = null;
 	private ImageButton _deleteImageButton = null;
@@ -179,6 +182,7 @@ public class NotificationView extends LinearLayout {
 		_callButton = (Button) findViewById(R.id.call_button);
 		_replyButton = (Button) findViewById(R.id.reply_button);
 		_viewButton = (Button) findViewById(R.id.view_button);
+		_smileyButton = (Button) findViewById(R.id.smiley_button);
 		
 		_dismissImageButton = (ImageButton) findViewById(R.id.dismiss_image_button);
 		_deleteImageButton = (ImageButton) findViewById(R.id.delete_image_button);
@@ -297,12 +301,14 @@ public class NotificationView extends LinearLayout {
 		_callButton.setBackgroundDrawable(getThemeButton(Constants.THEME_BUTTON_NORMAL));		
 		_replyButton.setBackgroundDrawable(getThemeButton(Constants.THEME_BUTTON_NORMAL));		
 		_viewButton.setBackgroundDrawable(getThemeButton(Constants.THEME_BUTTON_NORMAL));		
-
+		_smileyButton.setBackgroundDrawable(getThemeButton(Constants.THEME_BUTTON_NORMAL));
+		
 		_dismissButton.setTextColor(buttonTextColorID);
 		_deleteButton.setTextColor(buttonTextColorID);		
 		_callButton.setTextColor(buttonTextColorID);		
 		_replyButton.setTextColor(buttonTextColorID);		
 		_viewButton.setTextColor(buttonTextColorID);
+		_smileyButton.setTextColor(buttonTextColorID);
 		
 		_dismissImageButton.setBackgroundDrawable(getThemeButton(Constants.THEME_BUTTON_NORMAL));		
 		_deleteImageButton.setBackgroundDrawable(getThemeButton(Constants.THEME_BUTTON_NORMAL));		
@@ -507,6 +513,7 @@ public class NotificationView extends LinearLayout {
 			_callButton.setVisibility(View.GONE);
 			_replyButton.setVisibility(View.GONE);
 			_viewButton.setVisibility(View.GONE);
+			_smileyButton.setVisibility(View.GONE);
 			_dismissImageButton.setVisibility(View.GONE);
 			_deleteImageButton.setVisibility(View.GONE);
 			_callImageButton.setVisibility(View.GONE);
@@ -519,6 +526,7 @@ public class NotificationView extends LinearLayout {
 			_callButton.setTextSize(TypedValue.COMPLEX_UNIT_SP, buttonTextSize);
 			_replyButton.setTextSize(TypedValue.COMPLEX_UNIT_SP, buttonTextSize);
 			_viewButton.setTextSize(TypedValue.COMPLEX_UNIT_SP, buttonTextSize);
+			_smileyButton.setTextSize(TypedValue.COMPLEX_UNIT_SP, buttonTextSize);
 			//Set button font to bold.
 			if(_preferences.getBoolean(Constants.BUTTON_BOLD_TEXT_KEY, false)){
 				_dismissButton.setTypeface(null, Typeface.BOLD);
@@ -526,6 +534,7 @@ public class NotificationView extends LinearLayout {
 				_callButton.setTypeface(null, Typeface.BOLD);
 				_replyButton.setTypeface(null, Typeface.BOLD);
 				_viewButton.setTypeface(null, Typeface.BOLD);
+				_smileyButton.setTypeface(null, Typeface.BOLD);
 			}
 			//Setup the views buttons based on the notification type.
 			switch(_notificationType){
@@ -808,6 +817,44 @@ public class NotificationView extends LinearLayout {
     				);
 		    	}else{
 		    		_replyButton.setVisibility(View.GONE);
+		    	}
+				// Smiley Button
+				if(_preferences.getBoolean(Constants.SMS_DISPLAY_SMILEY_BUTTON_KEY, true)){
+		    		_smileyButton.setVisibility(View.VISIBLE);
+		    		_smileyButton.setOnClickListener(
+	    				new OnClickListener() {
+						    public void onClick(View view) {
+						    	if (_debug) Log.v("SMS Smiley Button Clicked()");
+						    	//Add action item
+						    	Dialog dialog = new Dialog(_context);
+						    	dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+						    	dialog.setContentView(R.layout.popup);
+				                dialog.setCancelable(true);
+				                //there are a lot of settings, for dialog, check them all out!
+				 
+				                //set up text
+				                //TextView text = (TextView) dialog.findViewById(R.id.TextView01);
+				                //text.setText(R.string.lots_of_text);
+				 
+				                //set up image view
+				                //ImageView img = (ImageView) dialog.findViewById(R.id.ImageView01);
+				                //img.setImageResource(R.drawable.nista_logo);
+				 
+				                //set up button
+				                //Button button = (Button) dialog.findViewById(R.id.Button01);
+				                //button.setOnClickListener(new OnClickListener() {
+				                //@Override
+				                //    public void onClick(View v) {
+				                //        finish();
+				                //    }
+				                //});
+				                //now that the dialog is set up, it's time to show it    
+				                dialog.show();
+						    }
+						}
+    				);
+		    	}else{
+		    		_smileyButton.setVisibility(View.GONE);
 		    	}
 			}
 		}catch(Exception ex){

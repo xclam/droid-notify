@@ -163,59 +163,68 @@
 			android:padding="5dp" 
 			android:selectAllOnFocus="true"/>
 	</LinearLayout>
-	<LinearLayout 
-		android:id="@+id/button_linear_layout" 
-		android:layout_height="wrap_content"
-		android:layout_width="fill_parent" 
-		android:layout_gravity="center_horizontal" 
-		android:padding="2dp" 
-		android:gravity="center">
-		<Button
-			android:id="@+id/dismiss_button"  
-			android:layout_height="wrap_content" 
-			android:layout_width="fill_parent" 
-			android:layout_weight="1"
-			android:layout_marginLeft="1dp"
-			android:layout_marginRight="1dp"
-			android:gravity="center_vertical|center_horizontal"
-			android:text="@string/dismiss" />
-		<Button
-			android:id="@+id/delete_button"  
-			android:layout_height="wrap_content" 
-			android:layout_width="fill_parent" 
-			android:layout_weight="1"
-			android:layout_marginLeft="1dp"
-			android:layout_marginRight="1dp"
-			android:gravity="center_vertical|center_horizontal"
-			android:text="@string/delete" />
-		<Button
-			android:id="@+id/call_button"  
-			android:layout_height="wrap_content" 
-			android:layout_width="fill_parent" 
-			android:layout_weight="1"
-			android:layout_marginLeft="1dp"
-			android:layout_marginRight="1dp"
-			android:gravity="center_vertical|center_horizontal"
-			android:text="@string/call" />
-		<Button
-			android:id="@+id/reply_button"  
-			android:layout_height="wrap_content" 
-			android:layout_width="fill_parent" 
-			android:layout_weight="1"
-			android:layout_marginLeft="1dp"
-			android:layout_marginRight="1dp"
-			android:gravity="center_vertical|center_horizontal"
-			android:text="@string/reply" />
-		<Button
-			android:id="@+id/view_button"  
-			android:layout_height="wrap_content" 
-			android:layout_width="fill_parent" 
-			android:layout_weight="1"
-			android:layout_marginLeft="1dp"
-			android:layout_marginRight="1dp"
-			android:gravity="center_vertical|center_horizontal"
-			android:text="@string/view" />
+
+	<LinearLayout
+	    android:id="@+id/button_linear_layout"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center_horizontal"
+	    android:gravity="center"
+	    android:padding="2dp" >
+
+	    <Button
+	        android:id="@+id/dismiss_button"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="1dp"
+	        android:layout_marginRight="1dp"
+	        android:gravity="center_vertical|center_horizontal"
+	        android:text="@string/dismiss" />
+
+	    <Button
+	        android:id="@+id/delete_button"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="1dp"
+	        android:layout_marginRight="1dp"
+	        android:gravity="center_vertical|center_horizontal"
+	        android:text="@string/delete" />
+
+	    <Button
+	        android:id="@+id/call_button"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="1dp"
+	        android:layout_marginRight="1dp"
+	        android:gravity="center_vertical|center_horizontal"
+	        android:text="@string/call" />
+
+	    <Button
+	        android:id="@+id/reply_button"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="1dp"
+	        android:layout_marginRight="1dp"
+	        android:gravity="center_vertical|center_horizontal"
+	        android:text="@string/reply" />
+
+	    <Button
+	        android:id="@+id/smiley_button"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:text=":-)" />
+
+	    <Button
+	        android:id="@+id/view_button"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="1dp"
+	        android:layout_marginRight="1dp"
+	        android:gravity="center_vertical|center_horizontal"
+	        android:text="@string/view" />
 	</LinearLayout>
+
 	<LinearLayout 
 		android:id="@+id/image_button_linear_layout" 
 		android:layout_height="wrap_content"
